@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+}
+h1{
+  color: rgb(72, 63, 197);
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+form{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 100%;
+  width: 400px;
+  margin-top: 0; 
+}
+.input{
+  border: none;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem ;
+  display: block;
+  width: 100%;
+}
+.input::placeholder{
+  color: #d5d5d5;
+}
+.input:focus{
+  outline-color: rgb(179, 131,226);
+}
+.todos{
+  max-width: 600px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  /* display: block; */
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  vertical-align: middle;
+}
+.todos li span{
+  overflow: scroll;
+  text-align: center;
+}
+li input{
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.completed{
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+li button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+button i {
+  display: block;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+button i:hover{
+  color: red;
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+small{
+  color: #616161;
+  margin-bottom: 3rem;
+  text-align: center;
+
+}
